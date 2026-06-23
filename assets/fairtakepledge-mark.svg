@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="75mm"
+   height="85mm"
+   viewBox="0 0 75 85"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="fairtakepledge-mark.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showguides="true"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="172.75"
+     inkscape:cy="165.5"
+     inkscape:window-width="1919"
+     inkscape:window-height="1007"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1"
+     showgrid="false" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="badge"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <path
+       id="path12"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:6.87917;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-y="3.1587291"
+       d="M 37.62582,81.027286 6.1661629,66.880935 6.0895729,3.439586 l 63.0724691,-10e-7 -0.0766,63.44135 z"
+       sodipodi:nodetypes="cccccc"
+       inkscape:label="main shape" />
+    <path
+       id="path1"
+       style="stroke-width:0.264583"
+       inkscape:transform-center-y="3.1587291"
+       d="M 37.62582,81.027286 6.1661634,66.880935 6.0895734,3.439586 l 63.0724686,-10e-7 -0.0766,63.44135 z"
+       sodipodi:nodetypes="cccccc"
+       inkscape:label="main shape" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="banner"
+     style="fill:#0000ff" />
+  <g
+     id="g38"
+     transform="matrix(1.443131,0,0,1.2700346,-96.204187,-73.359984)"
+     style="display:inline">
+    <path
+       id="path35"
+       style="display:inline;fill:#ffffff;stroke-width:0.232761"
+       d="m 72.30275,61.480367 5.373722,10.864116 h 7.224342 L 79.527091,61.480367 Z" />
+    <path
+       id="path36"
+       style="display:inline;fill:#ffffff;stroke-width:0.232761"
+       d="m 86.703516,61.480367 5.373722,10.864116 H 99.30158 L 93.927857,61.480367 Z" />
+    <path
+       id="path37"
+       style="display:inline;fill:#ffffff;stroke-width:0.232761"
+       d="m 100.57092,61.480367 5.37371,10.864116 h 7.22434 l -5.37372,-10.864116 z" />
+  </g>
+  <path
+     style="font-weight:bold;font-size:33.652px;font-family:Marion;-inkscape-font-specification:'Marion Bold';fill:#ffffff;stroke-width:11.9342;paint-order:stroke fill markers"
+     d="m 10.502888,57.83278 v -1.850729 q 3.789586,0 3.789586,-3.216743 v -18.72761 q 0,-3.481133 -4.098042,-3.481133 v -1.938858 h 24.764511 l 0.749104,8.460474 -2.908288,0.264389 Q 32.403175,35.183387 31.65407,33.905503 30.949031,32.627619 29.847406,32.010709 28.789847,31.3938 27.291639,31.21754 25.79343,31.04128 23.898636,31.04128 q -2.379507,0 -2.379507,1.498208 v 7.579175 q 0,1.366014 2.203248,1.366014 1.101624,0 1.762599,-0.176261 0.705039,-0.220324 1.101623,-0.705039 0.440651,-0.528779 0.660975,-1.366014 0.220325,-0.881298 0.484714,-2.203248 h 2.379508 v 11.545021 h -2.423572 v -1.101624 q 0,-0.52878 -0.132195,-1.14569 -0.132195,-0.660974 -0.61691,-1.189753 -0.484715,-0.572845 -1.454143,-0.925365 -0.96943,-0.35252 -2.599833,-0.35252 -0.837235,0 -1.101625,0.26439 -0.264389,0.26439 -0.264389,0.749105 v 7.887629 q 0,3.216743 4.494626,3.216743 v 1.850729 z m 32.477748,0 v -1.850729 q 4.582756,0 4.582756,-3.701456 V 32.363229 q 0,-1.321949 -1.806663,-1.321949 -1.366014,0 -2.379508,0.484715 -0.96943,0.440649 -1.718533,1.366013 -0.70504,0.925364 -1.23382,2.335443 -0.484715,1.366015 -0.881299,3.216743 l -2.732028,-0.396585 1.23382,-9.782422 q 1.145688,0.17626 2.511702,0.26439 1.366014,0.08812 2.159184,0.08812 h 17.405661 q 0.969428,0 2.379507,-0.08812 1.410079,-0.08813 2.555769,-0.26439 v 9.650227 l -2.555769,0.220325 Q 62.28109,34.654607 61.003206,32.936074 59.769388,31.21754 56.68484,31.21754 q -1.894794,0 -1.894794,1.145689 v 19.917366 q 0,3.701456 4.670886,3.701456 v 1.850729 z"
+     id="text2"
+     aria-label="FT" />
+</svg>
