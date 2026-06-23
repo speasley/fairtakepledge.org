@@ -1,0 +1,198 @@
+/* ============================================================
+   The Fair Take Pledge
+   Identity: the film slate — everything on the board, nothing hidden.
+   Type: Libre Baskerville (display, kin to Marion) · Newsreader (body) · Space Mono (numerals)
+   ============================================================ */
+
+:root {
+  --slate:      #17140E;
+  --slate-2:    #211D14;
+  --slate-3:    #2C2719;
+  --chalk:      #F3F3F2;   /* neutral near-white, matches the logo's whites */
+  --chalk-dim:  #A7A7A5;   /* neutral grey for secondary text on dark */
+  --paper:      #F0EBDD;
+  --ink:        #1B1810;
+  --ink-dim:    #6A6353;
+  --amber:      #DD9B36;
+  --amber-deep: #A9711A;
+  --rule-dark:  rgba(255,255,255,0.13);
+  --rule-light: rgba(27,24,16,0.14);
+
+  --display: "Libre Baskerville", Georgia, "Times New Roman", serif;
+  --serif:   "Newsreader", Georgia, serif;
+  --mono:    "Space Mono", ui-monospace, monospace;
+
+  --measure: 60ch;
+  --pad-block: clamp(4.5rem, 9vw, 8rem);
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--slate);
+  color: var(--chalk);
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+  font-family: var(--display);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: -0.006em;
+  margin: 0;
+}
+
+p { margin: 0 0 1.1em; }
+
+a { color: var(--amber); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.wrap { width: min(100%, 70rem); margin-inline: auto; padding-inline: var(--gutter); }
+.narrow { width: min(100%, 46rem); margin-inline: auto; padding-inline: var(--gutter); }
+
+/* ===================== Header ===================== */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.8rem var(--gutter);
+  background: rgba(23,20,14,0.86);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--rule-dark);
+}
+.wordmark {
+  display: inline-flex; align-items: center; gap: 0.55rem;
+  font-family: var(--display); font-weight: 700;
+  font-size: 1.05rem; letter-spacing: -0.01em; color: var(--chalk);
+  text-decoration: none;
+}
+.logo-mark { height: 30px; width: auto; display: block; }
+/* The single, deliberate mono signature on the whole page */
+.header-note { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.18em; color: var(--chalk-dim); text-transform: uppercase; }
+@media (max-width: 540px) { .header-note { display: none; } }
+
+/* ===================== Hero ===================== */
+.hero { padding: clamp(3.5rem, 8vw, 7rem) 0 var(--pad-block); }
+.hero-grid {
+  display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+@media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; } }
+
+.hero h1 { font-size: clamp(2.4rem, 5.6vw, 4.1rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.012em; }
+.hero h1 .soft { display: block; color: var(--chalk-dim); font-weight: 400; font-style: italic; font-size: 0.82em; margin-top: 0.3em; }
+.hero-lead {
+  font-size: clamp(1.15rem, 2vw, 1.38rem);
+  max-width: 36ch; margin-top: 1.7rem; color: var(--chalk);
+}
+
+/* ===================== Sections ===================== */
+section { padding-block: var(--pad-block); }
+
+/* Manifesto — posted notice on warm paper */
+.manifesto { background: var(--paper); color: var(--ink); }
+.manifesto h2 { font-size: clamp(1.9rem, 4.2vw, 3rem); margin-bottom: 1.6rem; color: var(--ink); }
+.manifesto-body { max-width: var(--measure); font-size: 1.18rem; }
+.manifesto-body p { margin-bottom: 1.15em; }
+.manifesto-body .lede { font-size: 1.32rem; font-family: var(--display); font-weight: 400; font-style: italic; line-height: 1.4; }
+.pull {
+  font-family: var(--display); font-style: italic; font-weight: 400;
+  font-size: clamp(1.5rem, 3.4vw, 2.3rem); line-height: 1.24;
+  margin: 2.6rem 0; padding-left: 1.25rem;
+  border-left: 3px solid var(--amber-deep); color: var(--ink);
+}
+.signoff { font-family: var(--display); font-weight: 700; font-size: 1.45rem; color: var(--ink); margin-top: 2rem; }
+
+/* The Pledge — written on the slate */
+.pledge { background: var(--slate); }
+.pledge h2 { font-size: clamp(1.9rem, 4.2vw, 3rem); margin-bottom: 0.5rem; }
+.pledge .deck { color: var(--chalk-dim); font-family: var(--serif); font-style: italic; font-size: 1.2rem; max-width: 48ch; margin-bottom: 3rem; }
+.group { margin-bottom: 2.75rem; }
+.group-head {
+  display: flex; align-items: baseline; gap: 0.8rem;
+  font-family: var(--display); font-style: italic; font-weight: 400; font-size: 1.3rem;
+  color: var(--chalk); margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule-dark); padding-bottom: 0.7rem;
+}
+.group-head .n { font-family: var(--mono); font-style: normal; font-size: 0.82rem; letter-spacing: 0.05em; color: var(--amber); }
+.principles { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.4rem; }
+.principles li { display: grid; grid-template-columns: 2.1rem 1fr; gap: 0.6rem; }
+.principles .num { font-family: var(--mono); color: var(--amber); font-size: 0.92rem; padding-top: 0.3rem; }
+.principles .pt { margin: 0; }
+.principles .pt b { font-family: var(--display); font-weight: 700; color: var(--chalk); }
+.principles .pt span { color: var(--chalk-dim); }
+
+/* Rights note — quiet grounding band */
+.rights { background: var(--slate-2); }
+.rights h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); margin-bottom: 1.25rem; color: var(--chalk); }
+.rights p { color: var(--chalk-dim); max-width: var(--measure); }
+.rights strong { color: var(--chalk); font-weight: 400; font-style: normal; }
+
+/* Know the signs */
+.signs { background: var(--paper); color: var(--ink); }
+.signs h2 { font-size: clamp(1.9rem, 4.2vw, 3rem); color: var(--ink); margin-bottom: 1.6rem; }
+.master {
+  background: var(--ink); color: var(--paper); border-radius: 6px;
+  padding: clamp(1.5rem, 3vw, 2.25rem); margin: 0 0 3rem; max-width: var(--measure);
+}
+.master .k { font-family: var(--display); font-style: italic; font-weight: 400; font-size: 1.05rem; color: var(--amber); display: block; margin-bottom: 0.7rem; }
+.master p { margin: 0; font-size: 1.15rem; }
+.master b { font-family: var(--display); font-weight: 700; }
+
+.flag-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem; }
+@media (max-width: 760px) { .flag-grid { grid-template-columns: 1fr; } }
+.flag-card { background: rgba(27,24,16,0.04); border: 1px solid var(--rule-light); border-radius: 6px; padding: 1.5rem; }
+.flag-card h3 { font-family: var(--display); font-weight: 700; font-size: 1.15rem; color: var(--ink); margin-bottom: 0.9rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--amber); display: inline-block; }
+.flag-card ul { margin: 0; padding-left: 1.1rem; }
+.flag-card li { margin-bottom: 0.7rem; font-size: 1rem; line-height: 1.5; color: var(--ink); }
+
+.todo { max-width: var(--measure); }
+.todo h3 { font-family: var(--display); font-weight: 700; font-size: 1.5rem; color: var(--ink); margin-bottom: 1.2rem; }
+.todo ul { list-style: none; margin: 0 0 2.5rem; padding: 0; display: grid; gap: 1rem; }
+.todo li { padding-left: 1.5rem; position: relative; font-size: 1.05rem; }
+.todo li::before { content: "→"; position: absolute; left: 0; color: var(--amber-deep); font-family: var(--mono); }
+.todo li b { font-family: var(--display); font-weight: 700; }
+.threshold {
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(1.5rem, 3.2vw, 2.2rem); line-height: 1.26; color: var(--ink);
+  border-top: 3px solid var(--ink); padding-top: 1.5rem; max-width: 30ch;
+}
+
+/* Badge + close */
+.close { background: var(--slate); text-align: center; }
+.close h2 { font-size: clamp(1.9rem, 4.4vw, 3.2rem); max-width: 16ch; margin: 0 auto 1.25rem; }
+.close p { color: var(--chalk-dim); max-width: 46ch; margin-inline: auto; }
+.cta-line { font-family: var(--display); font-style: italic; font-weight: 400; font-size: clamp(1.35rem, 3vw, 1.9rem); color: var(--amber); margin: 2rem 0 0; }
+.soon { font-family: var(--serif); letter-spacing: 0.16em; color: var(--chalk-dim); margin-top: 1.5rem; }
+
+footer { border-top: 1px solid var(--rule-dark); padding: 2.5rem var(--gutter); text-align: center; }
+footer p { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.08em; color: var(--chalk-dim); margin: 0; }
+footer a { color: var(--chalk-dim); }
+
+/* ============================================================
+   Logo placement — the rebuilt logo carries its own contrast
+   (white halo + interior), so it sits directly on the slate.
+   ============================================================ */
+.hero-seal-wrap { display: flex; justify-content: center; }
+.logo-seal {
+  width: min(100%, 330px);
+  filter: drop-shadow(0 24px 50px rgba(0,0,0,0.55));
+}
+.logo-seal img { display: block; width: 100%; height: auto; }
+.badge-seal {
+  width: min(100%, 196px);
+  margin: 0 auto 2.5rem;
+  filter: drop-shadow(0 16px 38px rgba(0,0,0,0.55));
+}
+.badge-seal img { display: block; width: 100%; height: auto; }
