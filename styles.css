@@ -143,9 +143,17 @@ section { padding-block: var(--pad-block); }
 .signs { background: var(--paper); color: var(--ink); }
 .signs h2 { font-size: clamp(1.9rem, 4.2vw, 3rem); color: var(--ink); margin-bottom: 1.6rem; }
 .master {
+  position: relative; overflow: hidden; isolation: isolate;
   background: var(--ink); color: var(--paper); border-radius: 6px;
   padding: clamp(1.5rem, 3vw, 2.25rem); margin: 0 0 3rem; max-width: var(--measure);
 }
+.master::after {
+  content: ""; position: absolute; z-index: 0;
+  right: -38px; bottom: -42px; width: 265px; height: 265px;
+  background: url('assets/flag-overlay.svg') no-repeat center / contain;
+  opacity: 0.12; transform: rotate(-7deg); pointer-events: none;
+}
+.master .k, .master p { position: relative; z-index: 1; }
 .master .k { font-family: var(--display); font-style: italic; font-weight: 400; font-size: 1.05rem; color: var(--amber); display: block; margin-bottom: 0.7rem; }
 .master p { margin: 0; font-size: 1.15rem; }
 .master b { font-family: var(--display); font-weight: 700; }
