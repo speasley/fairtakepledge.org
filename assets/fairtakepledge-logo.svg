@@ -32,7 +32,7 @@
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false" />
   <defs
      id="defs1" />
@@ -126,11 +126,6 @@
        id="path23"
        style="display:inline;opacity:1;fill:#ffffff;stroke:#000000;stroke-width:1.12668;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        d="m 6.0138221,68.988625 v 7.468871 a 46.534779,14.102235 0 0 0 31.7560699,3.79387 46.534779,14.102235 0 0 0 31.307822,-3.669026 v -7.468503 a 46.534779,14.102235 0 0 1 -31.307822,3.673888 46.534779,14.102235 0 0 1 -31.7560699,-3.7991 z" />
-    <path
-       id="path17"
-       style="display:inline;opacity:0.5;fill:none;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-       d="m 7.0754918,74.775415 c 7.3414342,1.97088 15.1054982,2.92902 22.8902562,3.35295 10.185202,0.51174 20.525408,0.072 30.511013,-1.61007 2.55207,-0.43991 5.073721,-0.97499 7.539545,-1.6228 v -5.84722 c -9.761109,2.45 -20.158605,3.32912 -30.456106,3.34754 -10.044884,-0.0255 -20.163933,-0.93332 -29.7073746,-3.25785 -0.8009046,-0.38509 -0.8800267,-0.0266 -0.7773336,0.51919 z"
-       sodipodi:nodetypes="ccccccccc" />
     <g
        id="text27"
        style="font-weight:bold;font-size:5.18613px;line-height:0;font-family:Marion;-inkscape-font-specification:'Marion Bold';letter-spacing:0.416742px;fill:#00ffff;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
