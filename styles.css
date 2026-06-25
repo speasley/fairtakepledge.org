@@ -1,15 +1,13 @@
-/* ============================================================
+/* ************************************************==================
    The Fair Take Pledge
-   Identity: the film slate — everything on the board, nothing hidden.
-   Type: Libre Baskerville (display, kin to Marion) · Newsreader (body) · Space Mono (numerals)
-   ============================================================ */
+   ************************************************================== */
 
 :root {
   --slate:      #17140E;
   --slate-2:    #211D14;
   --slate-3:    #2C2719;
-  --chalk:      #F3F3F2;   /* neutral near-white, matches the logo's whites */
-  --chalk-dim:  #A7A7A5;   /* neutral grey for secondary text on dark */
+  --chalk:      #F3F3F2;
+  --chalk-dim:  #A7A7A5;
   --paper:      #F0EBDD;
   --ink:        #1B1810;
   --ink-dim:    #6A6353;
@@ -62,7 +60,7 @@ a:focus-visible, button:focus-visible {
 .wrap { width: min(100%, 70rem); margin-inline: auto; padding-inline: var(--gutter); }
 .narrow { width: min(100%, 46rem); margin-inline: auto; padding-inline: var(--gutter); }
 
-/* ===================== Header ===================== */
+/* ************************ Header ************************ */
 .site-header {
   position: sticky; top: 0; z-index: 50;
   display: flex; align-items: center; justify-content: space-between;
@@ -82,7 +80,7 @@ a:focus-visible, button:focus-visible {
 .header-note { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.18em; color: var(--chalk-dim); text-transform: uppercase; }
 @media (max-width: 540px) { .header-note { display: none; } }
 
-/* ===================== Hero ===================== */
+/* ************************ Hero ************************ */
 .hero { padding: clamp(3.5rem, 8vw, 7rem) 0 var(--pad-block); }
 .hero-grid {
   display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(2rem, 5vw, 4rem);
@@ -97,10 +95,10 @@ a:focus-visible, button:focus-visible {
   max-width: 36ch; margin-top: 1.7rem; color: var(--chalk);
 }
 
-/* ===================== Sections ===================== */
+/* ************************ Sections ************************ */
 section { padding-block: var(--pad-block); }
 
-/* Manifesto — posted notice on warm paper */
+/* Manifesto */
 .manifesto { background: var(--paper); color: var(--ink); }
 .manifesto h2 { font-size: clamp(1.9rem, 4.2vw, 3rem); margin-bottom: 1.6rem; color: var(--ink); }
 .manifesto-body { max-width: var(--measure); font-size: 1.18rem; }
@@ -114,8 +112,9 @@ section { padding-block: var(--pad-block); }
 }
 .signoff { font-family: var(--display); font-weight: 700; font-size: 1.45rem; color: var(--ink); margin-top: 2rem; }
 
-/* The Pledge — written on the slate */
+/* The Pledge */
 .pledge { background: var(--slate); }
+.pledge .kicker { font-family: var(--display); font-style: italic; font-weight: 400; font-size: 1.05rem; color: var(--amber); margin: 0 0 0.6rem; }
 .pledge h2 { font-size: clamp(1.9rem, 4.2vw, 3rem); margin-bottom: 0.5rem; }
 .pledge .deck { color: var(--chalk-dim); font-family: var(--serif); font-style: italic; font-size: 1.2rem; max-width: 48ch; margin-bottom: 3rem; }
 .group { margin-bottom: 2.75rem; }
@@ -133,7 +132,7 @@ section { padding-block: var(--pad-block); }
 .principles .pt b { font-family: var(--display); font-weight: 700; color: var(--chalk); }
 .principles .pt span { color: var(--chalk-dim); }
 
-/* Rights note — quiet grounding band */
+/* Rights note */
 .rights { background: var(--slate-2); }
 .rights h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); margin-bottom: 1.25rem; color: var(--chalk); }
 .rights p { color: var(--chalk-dim); max-width: var(--measure); }
@@ -149,7 +148,7 @@ section { padding-block: var(--pad-block); }
 }
 .master::after {
   content: ""; position: absolute; z-index: 0;
-  right: -38px; bottom: -42px; width: 265px; height: 265px;
+  right: -38px; bottom: -52px; width: 240px; height: 240px;
   background: url('assets/flag-overlay.svg') no-repeat center / contain;
   opacity: 0.12; transform: rotate(-7deg); pointer-events: none;
 }
@@ -182,16 +181,12 @@ section { padding-block: var(--pad-block); }
 .close h2 { font-size: clamp(1.9rem, 4.4vw, 3.2rem); max-width: 16ch; margin: 0 auto 1.25rem; }
 .close p { color: var(--chalk-dim); max-width: 46ch; margin-inline: auto; }
 .cta-line { font-family: var(--display); font-style: italic; font-weight: 400; font-size: clamp(1.35rem, 3vw, 1.9rem); color: var(--amber); margin: 2rem 0 0; }
-.soon { font-family: var(--serif); letter-spacing: 0.16em; color: var(--chalk-dim); margin-top: 1.5rem; }
+.soon { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--chalk-dim); margin-top: 1.5rem; }
 
 footer { border-top: 1px solid var(--rule-dark); padding: 2.5rem var(--gutter); text-align: center; }
 footer p { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.08em; color: var(--chalk-dim); margin: 0; }
 footer a { color: var(--chalk-dim); }
 
-/* ============================================================
-   Logo placement — the rebuilt logo carries its own contrast
-   (white halo + interior), so it sits directly on the slate.
-   ============================================================ */
 .hero-seal-wrap { display: flex; justify-content: center; }
 .logo-seal {
   width: min(100%, 330px);
